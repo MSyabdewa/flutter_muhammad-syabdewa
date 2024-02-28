@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:math';
 
 // rumus persegi
@@ -42,6 +43,16 @@ bool cekPalindrom(String kata) {
   return kataTanpaSpasi == kataBalik;
 }
 
+void cariFaktor(int bilangan) {
+  print('Faktor dari $bilangan adalah:');
+
+  for (int i = 1; i <= bilangan; i++) {
+    if (bilangan % i == 0) {
+      print(i);
+    }
+  }
+}
+
 void main() {
   // Persegi
   double sisiPersegi = 5;
@@ -84,4 +95,9 @@ void main() {
   } else {
     print('$inputKata bukan palindrom');
   }
+
+  stdout.write('Masukkan sebuah bilangan: ');
+  int inputBilangan = int.parse(stdin.readLineSync()!);
+
+  cariFaktor(inputBilangan);
 }
