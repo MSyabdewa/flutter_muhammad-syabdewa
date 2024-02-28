@@ -33,6 +33,15 @@ double volumeTabung(double jariJari, double tinggi) {
   return volume;
 }
 
+bool cekPalindrom(String kata) {
+  // Menghilangkan spasi dan mengubah ke huruf kecil
+  String kataTanpaSpasi = kata.replaceAll(' ', '').toLowerCase();
+
+  // Mengecek palindrom
+  String kataBalik = kataTanpaSpasi.split('').reversed.join('');
+  return kataTanpaSpasi == kataBalik;
+}
+
 void main() {
   // Persegi
   double sisiPersegi = 5;
@@ -66,4 +75,13 @@ void main() {
   String lastName = "dewa";
 
   print(firstName + " " + middleName + lastName);
+
+  String inputKata = "oyo";
+  bool hasil = cekPalindrom(inputKata);
+
+  if (hasil) {
+    print('$inputKata adalah palindrom');
+  } else {
+    print('$inputKata bukan palindrom');
+  }
 }
