@@ -1,3 +1,5 @@
+import 'dart:math';
+
 // rumus persegi
 double luasPersegi(double sisi) {
   return sisi * sisi;
@@ -23,6 +25,12 @@ double luasLingkaran(double radius) {
 
 double kelilingLingkaran(double radius) {
   return 2 * 3.14 * radius;
+}
+
+double volumeTabung(double jariJari, double tinggi) {
+  // Rumus volume tabung: V = π * r^2 * h
+  double volume = pi * pow(jariJari, 2) * tinggi;
+  return volume;
 }
 
 void main() {
