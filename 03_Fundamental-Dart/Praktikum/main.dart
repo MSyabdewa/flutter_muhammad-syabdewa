@@ -51,4 +51,11 @@ void main() {
   // Variabel yang tidak bisa bernilai null (non-nullable)
   String nonNullableString = "Hello World";
   int nonNullableInt = 28;
+
+  // Menyambungkan variabel
+  String firstName = "Muhammad";
+  String middleName = "Syab";
+  String lastName = "dewa";
+
+  print(firstName + " " + middleName + lastName);
 }
