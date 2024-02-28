@@ -43,4 +43,12 @@ void main() {
   double jariJariLingkaran = 4;
   print('Luas Lingkaran: ${luasLingkaran(jariJariLingkaran)}');
   print('Keliling Lingkaran: ${kelilingLingkaran(jariJariLingkaran)}');
+
+  // Variabel yang bisa bernilai null (nullable)
+  String? nullableString;
+  int? nullableInt;
+
+  // Variabel yang tidak bisa bernilai null (non-nullable)
+  String nonNullableString = "Hello World";
+  int nonNullableInt = 28;
 }
