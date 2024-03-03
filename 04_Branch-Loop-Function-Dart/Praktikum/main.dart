@@ -1,3 +1,5 @@
+import 'dart:math';
+
 String kategoriNilai(int nilai) {
   if (nilai > 70) {
     return "Nilai A";
@@ -8,6 +10,10 @@ String kategoriNilai(int nilai) {
   } else {
     return "";
   }
+}
+
+double hitungLuasLingkaran(double jariJari) {
+  return pi * pow(jariJari, 2);
 }
 
 void main() {
@@ -86,4 +92,10 @@ void main() {
   }
 
   print(str);
+
+  double jariJariLingkaran = 5.0;
+  double luasLingkaran = hitungLuasLingkaran(jariJariLingkaran);
+
+  print('Jari-jari lingkaran: $jariJariLingkaran');
+  print('Luas lingkaran: $luasLingkaran');
 }
