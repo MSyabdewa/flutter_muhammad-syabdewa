@@ -23,4 +23,25 @@ void main() {
   for (int i = 1; i <= 10; i++) {
     print(i);
   }
+
+  List<String> buahList = [
+    'Apple',
+    'Banana',
+    'Avocado',
+    'Cherry',
+    'Mango',
+    'Apricot',
+    'Blueberry',
+    'Acerola',
+    'Grape',
+    'Almond'
+  ];
+
+  print('Buah-buah yang diawali dengan huruf A:');
+
+  for (String buah in buahList) {
+    if (buah.startsWith('A')) {
+      print(buah);
+    }
+  }
 }
