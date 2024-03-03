@@ -19,4 +19,8 @@ void main() {
   } else {
     print('Nilai $nilai tidak masuk dalam kategori yang ditentukan.');
   }
+
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
 }
