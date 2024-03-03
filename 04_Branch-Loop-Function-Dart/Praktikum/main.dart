@@ -44,4 +44,19 @@ void main() {
       print(buah);
     }
   }
+
+  int tinggiSegitiga = 6;
+  String str = "";
+
+  for (int i = 1; i <= tinggiSegitiga; i++) {
+    for (int space = 1; space <= tinggiSegitiga - i; space++) {
+      str = str + " ";
+    }
+    for (int j = 0; j < 2 * i - 1; j++) {
+      str = str + "*";
+    }
+    str = str + "\n";
+  }
+
+  print(str);
 }
