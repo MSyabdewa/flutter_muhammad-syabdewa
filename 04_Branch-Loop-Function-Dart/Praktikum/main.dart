@@ -16,6 +16,18 @@ double hitungLuasLingkaran(double jariJari) {
   return pi * pow(jariJari, 2);
 }
 
+int hitungFaktorial(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * hitungFaktorial(n - 1);
+  }
+}
+
+void tampilkanFaktorial(int nilai) {
+  print('Faktorial dari $nilai adalah: ${hitungFaktorial(nilai)}');
+}
+
 void main() {
   int nilai = 0;
   String kategori = kategoriNilai(nilai);
@@ -98,4 +110,8 @@ void main() {
 
   print('Jari-jari lingkaran: $jariJariLingkaran');
   print('Luas lingkaran: $luasLingkaran');
+
+  tampilkanFaktorial(10);
+  tampilkanFaktorial(40);
+  tampilkanFaktorial(50);
 }
