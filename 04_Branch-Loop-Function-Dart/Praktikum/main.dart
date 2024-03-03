@@ -45,14 +45,41 @@ void main() {
     }
   }
 
-  int tinggiSegitiga = 6;
+  // int tinggiSegitiga = 6;
+  // String str = "";
+
+  // for (int i = 1; i <= tinggiSegitiga; i++) {
+  //   for (int space = 1; space <= tinggiSegitiga - i; space++) {
+  //     str = str + " ";
+  //   }
+  //   for (int j = 0; j < 2 * i - 1; j++) {
+  //     str = str + "*";
+  //   }
+  //   str = str + "\n";
+  // }
+
+  // print(str);
+
+  int tinggiJamPasir = 5;
   String str = "";
 
-  for (int i = 1; i <= tinggiSegitiga; i++) {
-    for (int space = 1; space <= tinggiSegitiga - i; space++) {
+  // Bagian atas jam pasir
+  for (int i = 1; i <= tinggiJamPasir; i++) {
+    for (int space = 1; space <= i - 1; space++) {
       str = str + " ";
     }
-    for (int j = 0; j < 2 * i - 1; j++) {
+    for (int j = 0; j < 2 * (tinggiJamPasir - i) + 1; j++) {
+      str = str + "*";
+    }
+    str = str + "\n";
+  }
+
+  // Bagian bawah jam pasir
+  for (int i = tinggiJamPasir - 1; i >= 1; i--) {
+    for (int space = 1; space <= i - 1; space++) {
+      str = str + " ";
+    }
+    for (int j = 0; j < 2 * (tinggiJamPasir - i) + 1; j++) {
       str = str + "*";
     }
     str = str + "\n";
