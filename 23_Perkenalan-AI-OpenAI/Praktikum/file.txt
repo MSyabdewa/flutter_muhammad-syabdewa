@@ -1,0 +1,51 @@
+{
+  "model": "gpt-3.5-turbo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You will be provided with text, and your task is to translate it into emojis. Do not use any regular text. Do your best with emojis only."
+    },
+    {
+      "role": "user",
+      "content": "Artificial intelligence is a technology with great promise."
+    }
+  ],
+  "temperature": 0.8,
+  "max_tokens": 64,
+  "top_p": 1
+}
+
+AI : 🤖💡➡️📈✨
+
+User : pantai
+AI : 🏖️🌅
+
+User : gunung
+AI : 🏔️🌄
+
+User : laut
+AI : 🌊🐠
+
+User : luar angkasa
+AI : 🚀🌌🪐
+
+User : bulan
+AI : 🌕🌙
+
+User : bintang
+AI : ⭐🌟
+
+User : laptop
+AI : 💻
+
+User : mouse
+AI : 🖱️
+
+User : bis
+AI : 🚌
+
+User : mobil
+AI : 🚗
+
+User : motor
+AI : 🏍️
